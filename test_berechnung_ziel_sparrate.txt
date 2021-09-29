@@ -1,0 +1,1730 @@
+
+
+Eingabe 
+Klasse CalcVorgabenBsv
+ + m_rk_input_datum_vertragsbeginn        >20200101<  = >01.01.2020<
+ + m_rk_input_bestehendes_guthaben        >1234.5<
+ + m_rk_input_bestehende_bwz              >1.0<
+ + m_rk_input_bestehende_bss              >0.0<
+ + m_rk_input_wop_speicher                >0.0<
+ + m_rk_input_wop_datum_ablauf_bindefrist >20180201<  = >01.02.2018<
+ + m_rk_input_datum_berechnungsbeginn     >20200201<  = >01.02.2020<
+ + m_rk_input_laufzeit_in_monaten         >140<
+ + m_rk_input_knz_ansp_berechnen          >false<
+ + m_rk_input_knz_darlehensverzicht       >false<
+ + m_knz_kfg_sparphase_beruecksichtigen =>true<
+ + m_knz_kfg_darlehensphase_beruecksichtigen =>true<
+ + m_rk_input_ag_knz_beruecksichtigen     >true<
+ + m_rk_input_ag_betrag_vorgabe           ><
+ + m_rk_input_ag_art_begleichung          ><
+ + m_rk_input_knz_berechnungsziel         >SPARRATE<
+ + m_rk_input_knz_sparstopp               >MINDEST_SPARGUTHABEN<
+ + m_rk_input_betrag_bausparsumme         >120000.0<
+ + m_rk_input_proz_mehrzuteilung          >125.0<
+ + m_rk_input_knz_wop_berechnen           >true<
+ + m_rk_input_knz_wop_junge_leute_r       >true<
+ + m_rk_input_knz_wop_verheiratet         >true<
+ + m_rk_input_vorgabe_ztb_betrag          >0.0<
+ + m_rk_input_vorgabe_ztb_art             >TARIF<
+ + m_rk_input_vorgabe_ztb_optimierung     >false<
+ + m_rk_input_vorgabe_ztb_optimierung     >false<
+ + m_debug_knz_akt_element                >true<
+ + m_debug_knz_ansp_berechnung            >true<
+ + m_debug_knz_stichtage                  >true<
+ + m_debug_knz_wop_berechnung             >true<
+ + m_debug_knz_zins_berechnung_bsd        >true<
+ + m_debug_knz_zins_berechnung_spar       >true<
+ + m_rk_input_zahlung_sparbeitrag     >Z10|Zahlung Sparbeitrag|MONATLICH|1|1|20260201|0|1000.0|<
+ + m_rk_input_zahlung_vl_as           >Z20|Zahlung VL Antragste|MONATLICH|1|1|20260201|0|40.0|<
+ + m_rk_input_zahlung_vl_ep           >Z30|Zahlung VL Ehepartne|MONATLICH|1|1|20260201|0|30.0|<
+ + Sonderzahlung[0] Z40|Zahlung Sonder 1|MONATLICH|1|1|20210201|20220201|50.0|
+ + Sonderzahlung[1] Z50|Zahlung Sonder 2|HALBJAEHRLICH|0|1|20240201|20250801|234.0|
+ + keine Sondertilgungen vorhanden
+berechnung_betrag_kto_fuehrungsgebuehr        =>18.0<
+bsv_sparbeitrag_betrag                        =>0.0<
+bsv_sparbeitrag_bezeichnung                   =><
+bsv_sparbeitrag_datum_ab                      =>20260201<
+bsv_sparbeitrag_datum_bis                     =>0<
+c_datum_stichtag_ende                         =>20311031<
+c_datum_stichtag_start                        =>20191231<
+c_debug_knz_akt_element                       =>false<
+c_debug_knz_ansp_berechnung                   =>false<
+c_debug_knz_stichtage                         =>false<
+c_debug_knz_wop_berechnung                    =>false<
+c_debug_knz_zins_berechnung_bsd               =>false<
+c_debug_knz_zins_berechnung_spar              =>false<
+c_knz_ag_beruecksichtigen                     =>true<
+c_knz_ag_mit_sparbeitraegen_verrechnen        =>true<
+c_knz_berechnungsart                          =>1<
+c_spar_kto_gebuehr_knz_beruecksichtigen       =>true<
+c_knz_mit_arbeitnehmer_sparzulage             =>false<
+c_knz_sparstopp                               =>2<
+c_rk_berechnungsziel                          =>3<
+c_rk_max_datum_calc_lz_long                   =>21400229<
+c_spar_ag_art_begleichung                     =>0<
+c_spar_ag_betrag_vorgabe                      =>-1.0<
+c_spar_ag_bezeichnung                         =>Abschlussgebuehr 1.8 Promille der Bss 120000.0, 2160.0<
+c_spar_ag_datum_belastung                     =>20200201<
+c_spar_betrag_bausparsumme                    =>120000.0<
+c_spar_datum_mindestsparzeit_long             =>20220201<
+c_spar_datum_vertragsbeginn_long              =>20200201<
+c_spar_datum_zuteilung_long                   =>20311031<
+c_spar_mindest_sparzeit_rest_monate           =>24<
+c_spar_datum_stichtag_long                    =>20310630<
+c_spar_wop_gebuehr_laufend                    =>1.53<
+c_tarif_minbwz_betrag                         =>0.0<
+e_bsd_kto_gebuehr_laufend_betrag              =>0.0<
+e_bsd_kto_gebuehr_laufend_bezeichnung         =><
+e_bsd_kto_gebuehr_laufend_datum_belastung     =>0<
+e_rechenkern_fehler_nummer                    =>0<
+e_spar_ag_betrag                              =>2160.0<
+e_spar_ansp_einmalig_datum_auszahlung         =>0<
+e_spar_betrag_tarifliche_abschlussgebuehr     =>2160.0<
+e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0<
+e_spar_datum_berechnungsbeginn_jahr           =>2020<
+e_spar_datum_berechnungsbeginn_long           =>20200201<
+e_spar_datum_berechnungsbeginn_monat          =>2<
+e_spar_iteratonsziel_mindestsparguthaben      =>0.0<
+e_spar_knz_bonus_moeglich                     =>false<
+e_spar_kto_gebuehr_anteilig_anz_monate        =>11<
+e_spar_kto_gebuehr_anteilig_betrag            =>16.5<
+e_spar_kto_gebuehr_anteilig_bezeichnung       =>Anteilige Kontofuehrungsgebuehr fuer 11 Monate<
+e_spar_kto_gebuehr_anteilig_datum_belastung   =>20200201<
+e_spar_kto_gebuehr_laufend_betrag             =>18.0<
+e_spar_kto_gebuehr_laufend_bezeichnung        =>Kontofuehrungsgebuehr<
+e_spar_kto_gebuehr_laufend_datum_belastung    =>20210101<
+e_spar_laufzeit_gesamt_monate                 =>140<
+e_spar_wop_datum_junge_leute_regelung         =>20270228<
+e_spar_wop_gebuehr_laufend_datum_belastung    =>20210301<
+v_bestehend_ansp_ausstehend                   =>0.0<
+v_bestehend_ansp_festgeschrieben              =>0.0<
+v_bestehend_ansp_uj_vl_as                     =>0.0<
+v_bestehend_ansp_uj_vl_ep                     =>0.0<
+v_bestehend_wop_gebuehr_gesamt                =>0.0<
+v_bestehende_bwz                              =>0.0<
+v_bestehende_saldensumme                      =>0.0<
+v_wop_bestehender_betrag_festgesetzt          =>0.0<
+zaehler_index                                 =>0<
+max_sonder_zahlungen                          =>2<
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE (Iteration 1, Sparrate 0.0)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    00.00.0000
+calcRate: c_tarif_migu_knz_erreicht                  false
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: Hinweis: Der Stichtagskontostand ist um den Betrag der Gebuehren niedriger, da 
+calcRate:          die Gebuehren im Verlauf als Belastung enthalten sind.
+calcRate: 
+calcRate: 
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss            52363.63636363636
+calcRate: 
+calcRate: 
+calcRate: betrag_minder_bwz_diff =>4.8<
+calcRate: betrag_minder_bwz_salden_summe =>576000.0<
+calcRate: betrag_minder_bwz_fehlbetrag_je_ss =>52363.636<
+calcRate: 
+calcRate: c_betrag_bss_berechnet                     120000.0
+calcRate: e_spar_betrag_tarifliches_mindestguthab.   48000.0 = 40.0% der Bss 
+calcRate: e_spar_ag_betrag                         + 2160.0
+calcRate: c_stichtag_betrag_gebeuhren_kfg          + 0.0
+calcRate: c_stichtag_betrag_gebeuhren_wop          + 0.0
+calcRate: 
+calcRate: c_stichtag_betrag_soll_guthaben          = 50160.0
+calcRate: 
+calcRate: 
+calcRate: c_stichtag_betrag_vl_as                    0.0
+calcRate: c_stichtag_betrag_vl_ep                  + 0.0
+calcRate: c_stichtag_betrag_sonderzahlung          + 0.0
+calcRate: c_stichtag_betrag_zinsen                 + 0.0 / Zinsen ALT 0.0 Differenz 0.0
+calcRate: c_stichtag_betrag_foerderung             + 0.0
+calcRate: 
+calcRate: c_betrag_summe_sparleistung_anderweitig  = 0.0
+calcRate: 
+calcRate: 
+calcRate: c_betrag_raten_spar_leistung              50160.0 c_stichtag_betrag_sparbeitrag 0.0
+calcRate: c_anzahl_bsv_sparraten_bis_spar_stopp   / 15
+calcRate: 
+calcRate: bsv_sparbeitrag_betrag                    3344.0 (vorheriger Spabeitrag = 0.0, Differenz = -3344.0)
+calcRate: 
+calcRate: Die Sparrate von 0.0 ist zu klein, da die gesamte Sparleistung zum Stichtag (0.0) nicht die notwendige Sparleistung (50160.0) erreicht.
+calcRate: 
+calcRate: c_calc_rate_differenz_zu_soll_betrag       = -50160.0  Check false
+calcRate: c_calc_rate_differenz_zu_altem_sparbeitrag = 3344.0  Check false
+calcRate: 
+calcRate: Iteration  1 |          0.0 |          0.0 | -50160.0 |          0.0 |          0.0 |      50160.0 | 15 |       3344.0 | Rate 0.0 zu niedrig
+calcRate: 
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>14<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.12.2029
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.12.2029
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE (Iteration 2, Sparrate 3344.0)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.12.2029
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: Hinweis: Der Stichtagskontostand ist um den Betrag der Gebuehren niedriger, da 
+calcRate:          die Gebuehren im Verlauf als Belastung enthalten sind.
+calcRate: 
+calcRate: 
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss            52363.63636363636
+calcRate: 
+calcRate: 
+calcRate: betrag_minder_bwz_diff =>4.8<
+calcRate: betrag_minder_bwz_salden_summe =>576000.0<
+calcRate: betrag_minder_bwz_fehlbetrag_je_ss =>52363.636<
+calcRate: 
+calcRate: c_betrag_bss_berechnet                     120000.0
+calcRate: e_spar_betrag_tarifliches_mindestguthab.   48000.0 = 40.0% der Bss 
+calcRate: e_spar_ag_betrag                         + 2160.0
+calcRate: c_stichtag_betrag_gebeuhren_kfg          + 0.0
+calcRate: c_stichtag_betrag_gebeuhren_wop          + 0.0
+calcRate: 
+calcRate: c_stichtag_betrag_soll_guthaben          = 50160.0
+calcRate: 
+calcRate: 
+calcRate: c_stichtag_betrag_vl_as                    0.0
+calcRate: c_stichtag_betrag_vl_ep                  + 0.0
+calcRate: c_stichtag_betrag_sonderzahlung          + 0.0
+calcRate: c_stichtag_betrag_zinsen                 + 0.0 / Zinsen ALT 0.0 Differenz 0.0
+calcRate: c_stichtag_betrag_foerderung             + 0.0
+calcRate: 
+calcRate: c_betrag_summe_sparleistung_anderweitig  = 0.0
+calcRate: 
+calcRate: 
+calcRate: c_betrag_raten_spar_leistung              50160.0 c_stichtag_betrag_sparbeitrag 0.0
+calcRate: c_anzahl_bsv_sparraten_bis_spar_stopp   / 14
+calcRate: 
+calcRate: bsv_sparbeitrag_betrag                    3582.86 (vorheriger Spabeitrag = 3344.0, Differenz = -238.86000000000013)
+calcRate: 
+calcRate: Die Sparrate von 3344.0 ist zu klein, da die gesamte Sparleistung zum Stichtag (0.0) nicht die notwendige Sparleistung (50160.0) erreicht.
+calcRate: 
+calcRate: c_calc_rate_differenz_zu_soll_betrag       = -50160.0  Check false
+calcRate: c_calc_rate_differenz_zu_altem_sparbeitrag = 238.86000000000013  Check false
+calcRate: 
+calcRate: Iteration  2 |       3344.0 |          0.0 | -50160.0 |          0.0 |          0.0 |      50160.0 | 14 |      3582.86 | Rate 3344.0 zu niedrig
+calcRate: 
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>16<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>31.12.2028
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>31.12.2028
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE (Iteration 3, Sparrate 3582.86)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    31.12.2028
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: Hinweis: Der Stichtagskontostand ist um den Betrag der Gebuehren niedriger, da 
+calcRate:          die Gebuehren im Verlauf als Belastung enthalten sind.
+calcRate: 
+calcRate: 
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss            52363.63636363636
+calcRate: 
+calcRate: 
+calcRate: betrag_minder_bwz_diff =>4.8<
+calcRate: betrag_minder_bwz_salden_summe =>576000.0<
+calcRate: betrag_minder_bwz_fehlbetrag_je_ss =>52363.636<
+calcRate: 
+calcRate: c_betrag_bss_berechnet                     120000.0
+calcRate: e_spar_betrag_tarifliches_mindestguthab.   48000.0 = 40.0% der Bss 
+calcRate: e_spar_ag_betrag                         + 2160.0
+calcRate: c_stichtag_betrag_gebeuhren_kfg          + 0.0
+calcRate: c_stichtag_betrag_gebeuhren_wop          + 0.0
+calcRate: 
+calcRate: c_stichtag_betrag_soll_guthaben          = 50160.0
+calcRate: 
+calcRate: 
+calcRate: c_stichtag_betrag_vl_as                    0.0
+calcRate: c_stichtag_betrag_vl_ep                  + 0.0
+calcRate: c_stichtag_betrag_sonderzahlung          + 0.0
+calcRate: c_stichtag_betrag_zinsen                 + 0.0 / Zinsen ALT 0.0 Differenz 0.0
+calcRate: c_stichtag_betrag_foerderung             + 0.0
+calcRate: 
+calcRate: c_betrag_summe_sparleistung_anderweitig  = 0.0
+calcRate: 
+calcRate: 
+calcRate: c_betrag_raten_spar_leistung              50160.0 c_stichtag_betrag_sparbeitrag 0.0
+calcRate: c_anzahl_bsv_sparraten_bis_spar_stopp   / 13
+calcRate: 
+calcRate: bsv_sparbeitrag_betrag                    3858.46 (vorheriger Spabeitrag = 3582.86, Differenz = -275.5999999999999)
+calcRate: 
+calcRate: Die Sparrate von 3582.86 ist zu klein, da die gesamte Sparleistung zum Stichtag (0.0) nicht die notwendige Sparleistung (50160.0) erreicht.
+calcRate: 
+calcRate: c_calc_rate_differenz_zu_soll_betrag       = -50160.0  Check false
+calcRate: c_calc_rate_differenz_zu_altem_sparbeitrag = 275.5999999999999  Check false
+calcRate: 
+calcRate: Iteration  3 |      3582.86 |          0.0 | -50160.0 |          0.0 |          0.0 |      50160.0 | 13 |      3858.46 | Rate 3582.86 zu niedrig
+calcRate: 
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>13<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.12.2028
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.12.2028
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE (Iteration 4, Sparrate 3858.46)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.12.2028
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: Hinweis: Der Stichtagskontostand ist um den Betrag der Gebuehren niedriger, da 
+calcRate:          die Gebuehren im Verlauf als Belastung enthalten sind.
+calcRate: 
+calcRate: 
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss            52363.63636363636
+calcRate: 
+calcRate: 
+calcRate: betrag_minder_bwz_diff =>4.8<
+calcRate: betrag_minder_bwz_salden_summe =>576000.0<
+calcRate: betrag_minder_bwz_fehlbetrag_je_ss =>52363.636<
+calcRate: 
+calcRate: c_betrag_bss_berechnet                     120000.0
+calcRate: e_spar_betrag_tarifliches_mindestguthab.   48000.0 = 40.0% der Bss 
+calcRate: e_spar_ag_betrag                         + 2160.0
+calcRate: c_stichtag_betrag_gebeuhren_kfg          + 0.0
+calcRate: c_stichtag_betrag_gebeuhren_wop          + 0.0
+calcRate: 
+calcRate: c_stichtag_betrag_soll_guthaben          = 50160.0
+calcRate: 
+calcRate: 
+calcRate: c_stichtag_betrag_vl_as                    0.0
+calcRate: c_stichtag_betrag_vl_ep                  + 0.0
+calcRate: c_stichtag_betrag_sonderzahlung          + 0.0
+calcRate: c_stichtag_betrag_zinsen                 + 0.0 / Zinsen ALT 0.0 Differenz 0.0
+calcRate: c_stichtag_betrag_foerderung             + 0.0
+calcRate: 
+calcRate: c_betrag_summe_sparleistung_anderweitig  = 0.0
+calcRate: 
+calcRate: 
+calcRate: c_betrag_raten_spar_leistung              50160.0 c_stichtag_betrag_sparbeitrag 0.0
+calcRate: c_anzahl_bsv_sparraten_bis_spar_stopp   / 13
+calcRate: 
+calcRate: bsv_sparbeitrag_betrag                    3858.46 (vorheriger Spabeitrag = 3858.46, Differenz = 0.0)
+calcRate: 
+calcRate: Die Sparrate von 3858.46 ist zu klein, da die gesamte Sparleistung zum Stichtag (0.0) nicht die notwendige Sparleistung (50160.0) erreicht.
+calcRate: 
+calcRate: c_calc_rate_differenz_zu_soll_betrag       = -50160.0  Check false
+calcRate: c_calc_rate_differenz_zu_altem_sparbeitrag = 0.0  Check true
+calcRate: 
+calcRate: Iteration  4 |      3858.46 |          0.0 | -50160.0 |          0.0 |          0.0 |      50160.0 | 13 |      3858.46 | Rate 3858.46 zu niedrig
+calcRate: 
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 0, Sparrate 3858.46)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>3858.46<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+c_alter_berechneterc_sparbeitrag_x 3858.46
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 6, Sparrate 3858.46)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                true
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.12.2028
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 30040.278
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>21<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.03.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.03.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 1, Sparrate 30040.278)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>3858.46<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 3858.46 auf 30040.278
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 7, Sparrate 30040.278)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.03.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 43131.187
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>9<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.03.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.03.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 2, Sparrate 43131.187)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>30040.278<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 30040.278 auf 43131.187
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 8, Sparrate 43131.187)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.03.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 49676.6415
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>9<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>28.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>28.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 3, Sparrate 49676.6415)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>43131.187<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 43131.187 auf 49676.6415
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 9, Sparrate 49676.6415)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    28.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 52949.368749999994
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>9<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 4, Sparrate 52949.368749999994)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>49676.6415<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 49676.6415 auf 52949.368749999994
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 10, Sparrate 52949.368749999994)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 54585.73237499999
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>13<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 5, Sparrate 54585.73237499999)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>52949.368749999994<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 52949.368749999994 auf 54585.73237499999
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 11, Sparrate 54585.73237499999)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 55403.91418749999
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>19<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 6, Sparrate 55403.91418749999)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>54585.73237499999<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 54585.73237499999 auf 55403.91418749999
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 12, Sparrate 55403.91418749999)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 55813.00509374999
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>6<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 7, Sparrate 55813.00509374999)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>55403.91418749999<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 55403.91418749999 auf 55813.00509374999
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 13, Sparrate 55813.00509374999)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56017.55054687499
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>9<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 8, Sparrate 56017.55054687499)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>55813.00509374999<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 55813.00509374999 auf 56017.55054687499
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 14, Sparrate 56017.55054687499)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56119.82327343749
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>8<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 9, Sparrate 56119.82327343749)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56017.55054687499<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56017.55054687499 auf 56119.82327343749
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 15, Sparrate 56119.82327343749)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56170.95963671875
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>6<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>0<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 10, Sparrate 56170.95963671875)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56119.82327343749<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56119.82327343749 auf 56170.95963671875
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 16, Sparrate 56170.95963671875)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56196.52781835938
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>5<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 11, Sparrate 56196.52781835938)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56170.95963671875<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56170.95963671875 auf 56196.52781835938
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 17, Sparrate 56196.52781835938)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56209.31190917968
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>6<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 12, Sparrate 56209.31190917968)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56196.52781835938<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56196.52781835938 auf 56209.31190917968
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 18, Sparrate 56209.31190917968)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56215.703954589844
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>5<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>0<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 13, Sparrate 56215.703954589844)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56209.31190917968<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56209.31190917968 auf 56215.703954589844
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 19, Sparrate 56215.703954589844)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56218.89997729492
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>7<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>0<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 14, Sparrate 56218.89997729492)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56215.703954589844<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56215.703954589844 auf 56218.89997729492
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 20, Sparrate 56218.89997729492)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56220.49798864746
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>5<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 15, Sparrate 56220.49798864746)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56218.89997729492<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: Erhoehen der Untergrenze von 56218.89997729492 auf 56220.49798864746
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 21, Sparrate 56220.49798864746)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 56221.296994323726
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>5<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.02.2026
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+calcRate: ----------------------------------------------------------------------------------------------
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 16, Sparrate 56221.296994323726)
+calcRate: 
+calcRate: c_calc_bwz_suche_untergrenze =>56220.49798864746<
+calcRate: c_calc_bwz_suche_obergrenze  =>56222.096<
+calcRate: 
+calcRate: BERECHNUNGSZIEL SPARRATE BWZ (Iteration 22, Sparrate 56220.49798864746)
+calcRate: 
+calcRate: c_tarif_minbwz_datum_long                  00.00.0000
+calcRate: c_tarif_minbwz_knz_erreicht                false
+calcRate: 
+calcRate: c_tarif_migu_datum_long                    01.02.2026
+calcRate: c_tarif_migu_knz_erreicht                  true
+calcRate: 
+calcRate: c_tarif_ztv_datum_long                     00.00.0000
+calcRate: c_tarif_ztv_knz_erreicht                   false
+calcRate: 
+calcRate: c_spar_datum_stichtag_long                 30.06.2031
+calcRate: c_stichtag_betrag_bewertungszahl           0.0
+calcRate: c_anzahl_stichtage_bis_zuteilung           11
+calcRate: c_stichtag_betrag_saldensumme              0.0
+calcRate: c_stichtag_betrag_kontostand               0.0 (= absolut erreichter Wert)
+calcRate: 
+calcRate: c_salden_summe_mindestens                  576000.0
+calcRate: diff_salden_summe                          576000.0
+calcRate: 
+calcRate: salden_summe_fehlbetrag_je_ss              52363.63636363636
+calcRate: 
+calcRate: 3858.46
+calcRate: 3858.46
+calcRate: 4.8
+calcRate: 
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>5<
+
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>120000.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>48000.0
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>01.12.2028
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>01.12.2028
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>1<
+
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>0<
+
+
+'################################################################################################################## 
+'###### ERGEBNISSE ENDE-SPARPHASE                                                                         ######### 
+'################################################################################################################## 
+
+e_sparbeitrag_mgh =>3858.46<
+e_sparbeitrag_bwz =>0.0<
+
+ERGEBNISSE_2: c_stichtag_betrag_bewertungszahl        =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_gebeuhren_kfg         =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_kontostand            =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_saldensumme           =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_soll_guthaben         =>50160.0<
+ERGEBNISSE_2: c_stichtag_betrag_sonderzahlung         =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_sparbeitrag           =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_vl_as                 =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_vl_ep                 =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_zinsen                =>0.0<
+ERGEBNISSE_2: c_anzahl_bsv_sparraten_bis_spar_stopp   =>13<
+ERGEBNISSE_2: c_anzahl_stichtage_bis_zuteilung        =>11<
+
+ERGEBNISSE_2: c_betrag_akt_bewertungszahl             =>2.062<
+ERGEBNISSE_2: c_betrag_akt_bonus_zinsen               =>0.0<
+ERGEBNISSE_2: c_betrag_akt_grund_zinsen               =>362.9<
+ERGEBNISSE_2: c_betrag_akt_kontostand                 =>56041.48<
+ERGEBNISSE_2: c_betrag_akt_bonus_kto                  =>0.0<
+ERGEBNISSE_2: c_betrag_akt_saldensumme                =>247471.78999999998<
+ERGEBNISSE_2: c_betrag_bss_berechnet                  =>120000.0<
+ERGEBNISSE_2: c_betrag_ges_bonus_zinsen               =>0.0<
+ERGEBNISSE_2: c_betrag_ges_bsv_sparbeitrag            =>50159.979999999996<
+ERGEBNISSE_2: c_betrag_ges_guthaben_zinsen            =>0.0<
+ERGEBNISSE_2: c_betrag_ges_kto_gebuehren_spar         =>214.5<
+ERGEBNISSE_2: c_betrag_ges_sonderzahlung              =>550.0<
+ERGEBNISSE_2: c_betrag_ges_vl_antragsteller           =>480.0<
+ERGEBNISSE_2: c_betrag_ges_vl_ehepartner              =>360.0<
+ERGEBNISSE_2: c_betrag_ges_zinsen_spar                =>6108.77<
+
+ERGEBNISSE_2: c_rk_zaehler_iteration                  =>22<
+
+'################################################################################################################## 
+'################################################################################################################## 
+
+Keine Darlehensphase, da die Zuteilung nicht erreicht wurde.
+
+'################################################################################################################## 
+'###### ERGEBNISSE DARLEHEN                                                                                    #### 
+'################################################################################################################## 
+
+bsd_e_anfangsdarlehen                                =>0.0<
+bsd_e_betrag_darlehen_mit_mehrzuteilung              =>0.0<
+bsd_e_betrag_mehr_darlehen                           =>0.0<
+bsd_e_darlehens_gebuehr_betrag                       =>0.0<
+bsd_e_darlehens_gebuehr_bezeichnung                  =>Darlehensgebuehr<
+bsd_e_darlehens_gebuehr_datum_belastung              =>0<
+bsd_e_datum_darlehensbeginn                          =>20311101<
+bsd_e_betrag_disagio                                 =>0.0<
+bsd_e_disagio_bezeichnung                            =>Disagio<
+bsd_e_disagio_datum_belastung                        =>0<
+bsd_e_gesamt_eigene_einzahlung                       =>0.0<
+bsd_e_gesamt_kfg                                     =>0.0<
+bsd_e_gesamt_sondertiglung                           =>0.0<
+bsd_e_gesamt_zinsen                                  =>0.0<
+bsd_e_letzte_rate_betrag                             =>0.0<
+bsd_e_letzte_rate_datum                              =>0<
+bsd_e_letzte_rate_zinsbelastung                      =>0.0<
+bsd_e_tariflicher_darlehensanspruch                  =>0.0<
+c_bsd_betrag_darlehensstand                          =>0.0<
+c_bsd_akt_zins_belastung                             =>0.0<
+c_bsd_aktuelle_darlehenszinsen_bis_belastung         =>0.0<
+c_bsd_anfangsdarlehen                                =>0.0<
+c_bsd_anzahl_monate_gesamt                           =>0<
+c_bsd_berechnungsbeginn_long                         =>0<
+c_bsd_berechnungsende_long                           =>0<
+c_bsd_bsd_knz_darlehen_berechnen                     =>false<
+c_bsd_datum_letztes_kto_element                      =>0<
+c_bsd_start_index                                    =>0<
+c_bsd_zeitraum_darlehensbestand_ab                   =>0<
+c_bsd_zeitraum_darlehensbestand_anzahl_tage          =>0<
+c_bsd_zeitraum_darlehensbestand_betrag               =>0.0<
+c_bsd_zeitraum_darlehensbestand_zinsen               =>0.0<
+c_bsd_zins_und_tilgungsbeitrag                       =>0.0<
+c_bsd_nztb_anfangsdarlehen                           =>0.0<
+c_bsd_nztb_bausparsumme                              =>0.0<
+c_bsd_nztb_guthaben_bei_zuteilung                    =>0.0<
+c_bsd_nztb_tarif_name                                =><
+c_bsd_nztb_tarif_zins_darlehen                       =>0.0<
+c_bsd_nztb_tarif_zins_sparen                         =>0.0<
+c_bsd_nztb_zinsen_bei_zuteilung                      =>0.0<
+tarif_kto_gebuehren_jahr                             =>0.0<
+tarif_mindest_bss                                    =>5000.0<
+tarif_mindest_bwz                                    =>4.8<
+tarif_promille_abschluss_gebuehr                     =>1.8<
+tarif_proz_guthabenzins                              =>1.0<
+tarif_proz_mindest_sparguthaben                      =>40.0<
+tarif_regel_sparbeitrag                              =>4.0<
+tarif_wartezeit_in_monaten                           =>4<
+
+'################################################################################################################## 
+'###### ERGEBNISS RUECKGABE                                                                                    #### 
+'################################################################################################################## 
+
+
+
+Nr.   | Sort Id       | Datum      | Betrag Einzahlung Neu       | Betrag Gebuehr | Betrag Foerderung | Betrag Kontostand | Betrag Bwz | Anzahl Zinstage | Art   | Betrag Auszahlung | Betrag Betrag Salden Summe | Betrag Einzahlung Reset | Betrag Tilg Anteil | Betrag Uj Bonus Zins | Betrag Uj Guthabenzins | Betrag Zins Anteil | Betrag Zinsgutschrift | Bezeichnung        | Bonus Zinsen | Bsd Info Tilg Anteil | Bsd Info Zins Anteil | Knz Aktive Zahlung | Knz Loeschung | Str Art | Element Id | 
+0001  | 20200201_0000 | 01.02.2020 | ID_BERECHNUNGSBEGINN        | 0.0            | 0.0               | 0.0               | 0.0        | 0.0             | 0     | 0                 | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0002  | 20200201_0100 | 01.02.2020 | ID_AG_BELASTUNG             | 0.0            | 2160.0            | 0.0               | -2160.0    | 0.0             | 334   | 100               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0003  | 20200201_0110 | 01.02.2020 | ID_KFG_ANTEILIG             | 0.0            | 16.5              | 0.0               | -2176.5    | 0.0             | 334   | 110               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0004  | 20201231_0420 | 31.12.2020 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -2176.5    | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0005  | 20201400_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -2176.5    | 0.0             | 59    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0006  | 20210101_0120 | 01.01.2021 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -2194.5    | 0.0             | 59    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0007  | 20210228_0230 | 28.02.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -2144.5    | 0.0             | 1     | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0008  | 20210301_0130 | 01.03.2021 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | -2146.03   | 0.0             | 30    | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0009  | 20210331_0230 | 31.03.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -2096.03   | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0010  | 20210430_0230 | 30.04.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -2046.03   | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0011  | 20210531_0230 | 31.05.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1996.03   | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0012  | 20210630_0230 | 30.06.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1946.03   | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0013  | 20210731_0230 | 31.07.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1896.03   | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0014  | 20210831_0230 | 31.08.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1846.03   | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0015  | 20210930_0230 | 30.09.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1796.03   | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0016  | 20211031_0230 | 31.10.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1746.03   | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0017  | 20211130_0230 | 30.11.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1696.03   | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0018  | 20211231_0230 | 31.12.2021 | Z40                         | 50.0           | 0.0               | 0.0               | -1646.03   | 0.0             | 1     | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0019  | 20211231_0420 | 31.12.2021 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -1646.03   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0020  | 20211600_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -1646.03   | 0.0             | 60    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0021  | 20220101_0120 | 01.01.2022 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -1664.03   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0022  | 20220301_0130 | 01.03.2022 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | -1665.56   | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0023  | 20221231_0420 | 31.12.2022 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -1665.56   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0024  | 20221800_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -1665.56   | 0.0             | 60    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0025  | 20230101_0120 | 01.01.2023 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -1683.56   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0026  | 20230301_0130 | 01.03.2023 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | -1685.09   | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0027  | 20231231_0420 | 31.12.2023 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -1685.09   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0028  | 20232000_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -1685.09   | 0.0             | 61    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0029  | 20240101_0120 | 01.01.2024 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -1703.09   | 0.0             | 61    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0030  | 20240301_0130 | 01.03.2024 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | -1704.62   | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0031  | 20241231_0420 | 31.12.2024 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -1704.62   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0032  | 20242200_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -1704.62   | 0.0             | 60    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0033  | 20250101_0120 | 01.01.2025 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -1722.62   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0034  | 20250301_0130 | 01.03.2025 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | -1724.15   | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0035  | 20251231_0420 | 31.12.2025 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -1724.15   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0036  | 20252400_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -1724.15   | 0.0             | 32    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0037  | 20260101_0120 | 01.01.2026 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -1742.15   | 0.0             | 32    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0038  | 20260201_0200 | 01.02.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 2116.31    | 0.0             | 27    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0039  | 20260228_0210 | 28.02.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 2156.31    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.06               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0040  | 20260228_0220 | 28.02.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 2186.31    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.06               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0041  | 20260301_0130 | 01.03.2026 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 2184.78    | 0.0             | 30    | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.8                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0042  | 20260301_0200 | 01.03.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 6043.24    | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.8                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0043  | 20260331_0210 | 31.03.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 6083.24    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.17               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0044  | 20260331_0220 | 31.03.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 6113.24    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.17               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0045  | 20260401_0200 | 01.04.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 9971.7     | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 4.86               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0046  | 20260430_0210 | 30.04.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 10011.7    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.27               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0047  | 20260430_0220 | 30.04.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 10041.7    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.27               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0048  | 20260501_0200 | 01.05.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 13900.16   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 8.25               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0049  | 20260531_0210 | 31.05.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 13940.16   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.38               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0050  | 20260531_0220 | 31.05.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 13970.16   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.38               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0051  | 20260601_0200 | 01.06.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 17828.62   | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 11.1               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0052  | 20260630_0210 | 30.06.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 17868.62   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.49               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0053  | 20260630_0220 | 30.06.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 17898.62   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.49               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0054  | 20260701_0200 | 01.07.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 21757.08   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 14.71              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0055  | 20260731_0210 | 31.07.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 21797.08   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.6                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0056  | 20260731_0220 | 31.07.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 21827.08   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.6                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0057  | 20260801_0200 | 01.08.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 25685.54   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 17.94              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0058  | 20260831_0210 | 31.08.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 25725.54   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.7                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0059  | 20260831_0220 | 31.08.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 25755.54   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.7                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0060  | 20260901_0200 | 01.09.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 29614.0    | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 20.46              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0061  | 20260930_0210 | 30.09.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 29654.0    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.81               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0062  | 20260930_0220 | 30.09.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 29684.0    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.81               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0063  | 20261001_0200 | 01.10.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 33542.46   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 24.4               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0064  | 20261031_0210 | 31.10.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 33582.46   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.92               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0065  | 20261031_0220 | 31.10.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 33612.46   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.92               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0066  | 20261101_0200 | 01.11.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 37470.92   | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 26.71              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0067  | 20261130_0210 | 30.11.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 37510.92   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 1.03               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0068  | 20261130_0220 | 30.11.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 37540.92   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 1.03               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0069  | 20261201_0200 | 01.12.2026 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 41399.38   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 30.86              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0070  | 20261231_0210 | 31.12.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 41439.38   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 1.13               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0071  | 20261231_0220 | 31.12.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 41469.38   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 1.13               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0072  | 20261231_0420 | 31.12.2026 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 41637.03   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.13               | 0.0                   | 167.65000000000003 | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0073  | 20262600_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 41637.03   | 0.346           | 59    | 498               | 0.0                        | 41637.03                | 0.0                | 0.0                  | 0.0                    | 67.3               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0074  | 20270101_0120 | 01.01.2027 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 41619.03   | 0.0             | 59    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 67.3               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0075  | 20270228_0490 | 28.02.2027 | ID_WOP_AUSZAHLUNG_JLR       | 0.0            | 0.0               | 413.62            | 42032.65   | 0.0             | 1     | 490               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.14               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0076  | 20270301_0130 | 01.03.2027 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 42031.12   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 316.68             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0077  | 20271201_0200 | 01.12.2027 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 45889.58   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 34.55              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0078  | 20271231_0210 | 31.12.2027 | Z20                         | 40.0           | 0.0               | 0.0               | 45929.58   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 1.26               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0079  | 20271231_0220 | 31.12.2027 | Z30                         | 30.0           | 0.0               | 0.0               | 45959.58   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 1.26               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0080  | 20271231_0420 | 31.12.2027 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 46838.38   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.26               | 0.0                   | 878.8              | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0081  | 20272800_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 46838.38   | 0.737           | 61    | 498               | 0.0                        | 88475.41                | 0.0                | 0.0                  | 0.0                    | 78.06              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0082  | 20280101_0120 | 01.01.2028 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 46820.38   | 0.0             | 61    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 78.06              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0083  | 20280301_0130 | 01.03.2028 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 46818.85   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 351.79             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0084  | 20281201_0200 | 01.12.2028 | ID_SPAR_BEITRAG             | 3858.46        | 0.0               | 0.0               | 50677.31   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 38.38              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0085  | 20281231_0210 | 31.12.2028 | Z20                         | 0.0            | 0.0               | 0.0               | 50677.31   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 1.38               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0086  | 20281231_0220 | 31.12.2028 | Z30                         | 0.0            | 0.0               | 0.0               | 50677.31   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 1.38               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0087  | 20281231_0420 | 31.12.2028 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 51732.43   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.38               | 0.0                   | 1055.1200000000001 | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0088  | 20283000_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 51732.43   | 1.168           | 60    | 498               | 0.0                        | 140207.84               | 0.0                | 0.0                  | 0.0                    | 85.04              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0089  | 20290101_0120 | 01.01.2029 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 51714.43   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 85.04              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0090  | 20290301_0130 | 01.03.2029 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 51712.9    | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 389.63             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0091  | 20291201_0200 | 01.12.2029 | ID_SPAR_BEITRAG             | 0.0            | 0.0               | 0.0               | 51712.9    | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 42.5               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0092  | 20291231_0210 | 31.12.2029 | Z20                         | 0.0            | 0.0               | 0.0               | 51712.9    | 0.0             | 30    | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 42.5               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0093  | 20291231_0220 | 31.12.2029 | Z30                         | 0.0            | 0.0               | 0.0               | 51712.9    | 0.0             | 30    | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 42.5               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0094  | 20291231_0420 | 31.12.2029 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 52959.77   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 42.5               | 0.0                   | 1246.87            | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0095  | 20293200_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 52959.77   | 1.609           | 60    | 498               | 0.0                        | 193167.61               | 0.0                | 0.0                  | 0.0                    | 87.06              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0096  | 20300101_0120 | 01.01.2030 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 52941.77   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 87.06              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0097  | 20300301_0130 | 01.03.2030 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 52940.24   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 398.88             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0098  | 20301201_0200 | 01.12.2030 | ID_SPAR_BEITRAG             | 0.0            | 0.0               | 0.0               | 52940.24   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 43.51              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0099  | 20301231_0210 | 31.12.2030 | Z20                         | 0.0            | 0.0               | 0.0               | 52940.24   | 0.0             | 30    | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 43.51              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0100  | 20301231_0220 | 31.12.2030 | Z30                         | 0.0            | 0.0               | 0.0               | 52940.24   | 0.0             | 30    | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 43.51              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 1       | null       | 
+0101  | 20301231_0420 | 31.12.2030 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 54304.18   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 43.51              | 0.0                   | 1363.9399999999998 | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0102  | 20303400_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 54304.18   | 2.062           | 60    | 498               | 0.0                        | 247471.78999999998      | 0.0                | 0.0                  | 0.0                    | 89.27              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0103  | 20310101_0120 | 01.01.2031 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 54286.18   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 89.27              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0104  | 20310301_0130 | 01.03.2031 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 54284.65   | 0.0             | 244   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 362.9              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0105  | 20311031_0430 | 31.10.2031 | ID_ZINSGUTSCHRIFT_ZUTEILUNG | 0.0            | 0.0               | 0.0               | 55681.04   | 0.0             | 0     | 430               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 1396.3899999999999 | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0106  | 20311031_0491 | 31.10.2031 | ID_WOP_AUSZAHLUNG           | 0.0            | 0.0               | 360.44            | 56041.48   | 0.0             | 0     | 491               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0107  | 20311031_0499 | 31.10.2031 | ID_ZUTEILUNG                | 0.0            | 0.0               | 0.0               | 56041.48   | 0.0             | 0     | 499               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+
+
+
+
+ m_rechenkern_fehler_nummer                       =>0<
+ m_rechenkern_fehler_text                         =>OK<
+ 
+ m_calc_vertragsart                               =>Neuvertrag<
+ m_knz_ist_neuvertrag                             =>true<
+ m_knz_ist_bestandsvertrag                        =>false<
+ 
+ m_datum_berechnung_beginn_long                   =>20200201< 01.02.2020
+ m_datum_berechnung_ende_long                     =>20311031< 31.10.2031
+ m_datum_sparstopp_sparrate_long                  =>20281201< 01.12.2028
+ m_betrag_bsv_sparbeitrag                         =>3858.46<
+ m_betrag_bsv_bausparsumme                        =>120000.00<
+ 
+ m_spar_kto_gebuehr_knz_beruecksichtigt           =>true<
+ m_spar_kto_gebuehr_anteilig_datum_belastung_long =>20200201< 01.02.2020
+ m_spar_kto_gebuehr_anteilig_anz_monate           =>11<
+ m_spar_kto_gebuehr_anteilig_betrag               =>16.50<
+ m_spar_kto_gebuehr_laufend_datum_belastung_long  =>20210101< 01.01.2021
+ m_spar_kto_gebuehr_laufend_betrag                =>18.00<
+ 
+ m_spar_ansp_knz_berechnet                        =>false<
+ m_spar_ansp_betrag_ausstehend                    =>0.00<
+ m_spar_ansp_betrag_gesamt                        =>0.00<
+ m_spar_ansp_betrag_gutgeschrieben                =>0.00<
+ 
+ m_spar_wop_knz_berechnet                         =>true<
+ m_spar_wop_betrag_ausstehend                     =>90.11<
+ m_spar_wop_betrag_gebuehr_gesamt                 =>16.83<
+ m_spar_wop_betrag_gesamt                         =>864.17<
+ m_spar_wop_betrag_gutgeschrieben                 =>774.06<
+ 
+ m_stichtag_datum_long                            =>20310630< 30.06.2031
+ m_stichtag_betrag_bewertungszahl                 =>0.00000<
+ m_stichtag_betrag_sparbeitrag                    =>0.00<
+ m_stichtag_betrag_vl_antragsteller               =>0.00<
+ m_stichtag_betrag_vl_ehepartner                  =>0.00<
+ m_stichtag_betrag_sonderzahlung                  =>0.00<
+ m_stichtag_betrag_zinsen                         =>0.00<
+ m_stichtag_betrag_gebeuhren_kfg                  =>0.00<
+ m_stichtag_betrag_kontostand                     =>0.00<
+ m_stichtag_betrag_saldensumme                    =>0.00<
+ m_stichtag_betrag_soll_guthaben                  =>50160.00<
+ 
+ m_zuteilung_datum_long                           =>20311031< 31.10.2031
+ m_zuteilung_betrag_bewertungszahl                =>2.06200<
+ m_zuteilung_betrag_sparbeitrag                   =>50159.98<
+ m_zuteilung_betrag_vl_antragsteller              =>480.00<
+ m_zuteilung_betrag_vl_ehepartner                 =>360.00<
+ m_zuteilung_betrag_sonderzahlung                 =>550.00<
+ m_zuteilung_betrag_zinsen                        =>6108.77<
+ m_zuteilung_betrag_gebeuhren_kfg                 =>214.50<
+ m_zuteilung_betrag_bonus_zinsen                  =>0.00<
+ m_zuteilung_betrag_bonus_gutgeschrieben          =>0.00<
+ m_zuteilung_betrag_guthaben_zinsen               =>0.00<
+ 
+ m_tarif_mindestsparzeit_datum                    =>20220201< 01.02.2022
+ m_tarif_mindestsparzeit_anzahl_monate            =>24<
+ 
+ m_tarif_mindestguthaben_datum                    =>20281201< 01.12.2028
+ m_tarif_mindestguthaben_betrag                   =>48000.00<
+ m_tarif_mindestguthaben_knz_erreicht             =>true<
+ 
+ m_tarif_bewertungszahl_datum                     =>0< 00.00.0000
+ m_tarif_bewertungszahl_betrag                    =>4.80<
+ m_tarif_bewertungszahl_knz_erreicht              =>false<
+ 
+ m_tarif_zuteilungsvoraussetzungen_datum          =>0< 00.00.0000
+ m_tarif_zuteilungsvoraussetzungen_knz_erreicht   =>false<
+ 
+ m_tarif_regelsparbeitrag_betrag                  =>480.00<
+ m_tarif_regelsparbeitrag_promille_bss            =>4.00<
+ 
+ m_tarif_mindest_bss                              =>5000.00<
+ m_tarif_mindest_bwz                              =>4.80000<
+ m_tarif_promille_abschluss_gebuehr               =>1.80<
+ m_tarif_proz_guthabenzins                        =>1.00<
+ m_tarif_proz_mindest_sparguthaben                =>40.00<
+ m_tarif_wartezeit_in_monaten                     =>4.00<
+ 
+ m_bsd_datum_darlehen_beginn                      =>20311101< 01.11.2031
+ m_bsd_datum_darlehen_ende                        =>0< 00.00.0000
+ m_bsd_tariflicher_darlehensanspruch              =>0.00<
+ m_bsd_tariflicher_ztb                            =>0.00<
+ m_bsd_ztb_betrag                                 =>0.00<
+ m_bsd_ztb_promill_bss                            =>0.00000<
+ m_bsd_betrag_anfangsdarlehen                     =>0.00<
+ m_bsd_betrag_darlehen_mit_mehrzuteilung          =>0.00<
+ m_bsd_betrag_mehr_darlehen                       =>0.00<
+ m_bsd_darlehens_gebuehr_betrag                   =>0.00<
+ m_bsd_darlehens_gebuehr_datum_belastung          =>0<
+ m_bsd_gesamt_eigene_einzahlung                   =>0.00<
+ m_bsd_gesamt_sondertiglung                       =>0.00<
+ m_bsd_gesamt_zinsen                              =>0.00<
+ 
+ m_bsd_disagio_datum_belastung                    =>0< 00.00.0000
+ m_bsd_disagio_betrag                             =>0.00<
+ 
+ m_bsd_kto_gebuehr_knz_beruecksichtigt            =>true<
+ m_bsd_kto_gebuehr_anteilig_anz_monate            =>0<
+ m_bsd_kto_gebuehr_anteilig_betrag                =>0.00000<
+ m_bsd_kto_gebuehr_laufend_betrag                 =>0.00000<
+ m_bsd_gesamt_kfg                                 =>0.00<
+ 
+ m_bsd_letzte_rate_datum                          =>0< 00.00.0000
+ m_bsd_letzte_rate_betrag                         =>0.00<
+ m_bsd_letzte_rate_zinsbelastung                  =>0.00<
+ 
+ m_laufzeit_sparphase_gesamt_monate               =>140<
+ m_laufzeit_sparphase_jahre                       =>11<
+ m_laufzeit_sparphase_monate                      =>8<
+ 
+ m_laufzeit_bsd_gesamt_monate                     =>0<
+ m_laufzeit_bsd_jahre                             =>0<
+ m_laufzeit_bsd_monate                            =>0<
+ 
+ m_laufzeit_vertrag_gesamt_monate                 =>140<
+ m_laufzeit_vertrag_jahre                         =>11<
+ m_laufzeit_vertrag_monate                        =>8<
+ 
+ m_millisekunden_gesamt                           =>215<
+ m_millisekunden_vorabberechnungen                =>1<
+ m_millisekunden_sparphase_kto_verlauf            =>1<
+ m_millisekunden_sparphase_berechnung             =>213<
+ m_millisekunden_darlehensphase                   =>0<

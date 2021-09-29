@@ -1,0 +1,503 @@
+
+
+Eingabe 
+Klasse CalcVorgabenBsv
+ + m_rk_input_datum_vertragsbeginn        >20200101<  = >01.01.2020<
+ + m_rk_input_bestehendes_guthaben        >1234.5<
+ + m_rk_input_bestehende_bwz              >1.0<
+ + m_rk_input_bestehende_bss              >0.0<
+ + m_rk_input_wop_speicher                >0.0<
+ + m_rk_input_wop_datum_ablauf_bindefrist >20180201<  = >01.02.2018<
+ + m_rk_input_datum_berechnungsbeginn     >20200201<  = >01.02.2020<
+ + m_rk_input_laufzeit_in_monaten         >140<
+ + m_rk_input_knz_ansp_berechnen          >false<
+ + m_rk_input_knz_darlehensverzicht       >false<
+ + m_knz_kfg_sparphase_beruecksichtigen =>true<
+ + m_knz_kfg_darlehensphase_beruecksichtigen =>true<
+ + m_rk_input_ag_knz_beruecksichtigen     >true<
+ + m_rk_input_ag_betrag_vorgabe           ><
+ + m_rk_input_ag_art_begleichung          ><
+ + m_rk_input_knz_berechnungsziel         >BAUSPARSUMME<
+ + m_rk_input_knz_sparstopp               >MINDEST_SPARGUTHABEN<
+ + m_rk_input_betrag_bausparsumme         >120000.0<
+ + m_rk_input_proz_mehrzuteilung          >125.0<
+ + m_rk_input_knz_wop_berechnen           >true<
+ + m_rk_input_knz_wop_junge_leute_r       >true<
+ + m_rk_input_knz_wop_verheiratet         >true<
+ + m_rk_input_vorgabe_ztb_betrag          >0.0<
+ + m_rk_input_vorgabe_ztb_art             >TARIF<
+ + m_rk_input_vorgabe_ztb_optimierung     >false<
+ + m_rk_input_vorgabe_ztb_optimierung     >false<
+ + m_debug_knz_akt_element                >true<
+ + m_debug_knz_ansp_berechnung            >true<
+ + m_debug_knz_stichtage                  >true<
+ + m_debug_knz_wop_berechnung             >true<
+ + m_debug_knz_zins_berechnung_bsd        >true<
+ + m_debug_knz_zins_berechnung_spar       >true<
+ + m_rk_input_zahlung_sparbeitrag     >Z10|Zahlung Sparbeitrag|MONATLICH|1|1|20260201|0|1000.0|<
+ + m_rk_input_zahlung_vl_as           >Z20|Zahlung VL Antragste|MONATLICH|1|1|20260201|0|40.0|<
+ + m_rk_input_zahlung_vl_ep           >Z30|Zahlung VL Ehepartne|MONATLICH|1|1|20260201|0|30.0|<
+ + Sonderzahlung[0] Z40|Zahlung Sonder 1|MONATLICH|1|1|20210201|20220201|50.0|
+ + Sonderzahlung[1] Z50|Zahlung Sonder 2|HALBJAEHRLICH|0|1|20240201|20250801|234.0|
+ + keine Sondertilgungen vorhanden
+berechnung_betrag_kto_fuehrungsgebuehr        =>18.0<
+bsv_sparbeitrag_betrag                        =>1000.0<
+bsv_sparbeitrag_bezeichnung                   =><
+bsv_sparbeitrag_datum_ab                      =>20260201<
+bsv_sparbeitrag_datum_bis                     =>0<
+c_datum_stichtag_ende                         =>20311031<
+c_datum_stichtag_start                        =>20191231<
+c_debug_knz_akt_element                       =>false<
+c_debug_knz_ansp_berechnung                   =>false<
+c_debug_knz_stichtage                         =>false<
+c_debug_knz_wop_berechnung                    =>false<
+c_debug_knz_zins_berechnung_bsd               =>false<
+c_debug_knz_zins_berechnung_spar              =>false<
+c_knz_ag_beruecksichtigen                     =>true<
+c_knz_ag_mit_sparbeitraegen_verrechnen        =>true<
+c_knz_berechnungsart                          =>1<
+c_spar_kto_gebuehr_knz_beruecksichtigen       =>true<
+c_knz_mit_arbeitnehmer_sparzulage             =>false<
+c_knz_sparstopp                               =>2<
+c_rk_berechnungsziel                          =>2<
+c_rk_max_datum_calc_lz_long                   =>21400229<
+c_spar_ag_art_begleichung                     =>0<
+c_spar_ag_betrag_vorgabe                      =>-1.0<
+c_spar_ag_bezeichnung                         =><
+c_spar_ag_datum_belastung                     =>20200201<
+c_spar_betrag_bausparsumme                    =>0.0<
+c_spar_datum_mindestsparzeit_long             =>20220201<
+c_spar_datum_vertragsbeginn_long              =>20200201<
+c_spar_datum_zuteilung_long                   =>20311031<
+c_spar_mindest_sparzeit_rest_monate           =>24<
+c_spar_datum_stichtag_long                    =>20310630<
+c_spar_wop_gebuehr_laufend                    =>1.53<
+c_tarif_minbwz_betrag                         =>0.0<
+e_bsd_kto_gebuehr_laufend_betrag              =>0.0<
+e_bsd_kto_gebuehr_laufend_bezeichnung         =><
+e_bsd_kto_gebuehr_laufend_datum_belastung     =>0<
+e_rechenkern_fehler_nummer                    =>0<
+e_spar_ag_betrag                              =>0.0<
+e_spar_ansp_einmalig_datum_auszahlung         =>0<
+e_spar_betrag_tarifliche_abschlussgebuehr     =>0.0<
+e_spar_betrag_tarifliches_mindestsparguthaben =>0.0<
+e_spar_datum_berechnungsbeginn_jahr           =>2020<
+e_spar_datum_berechnungsbeginn_long           =>20200201<
+e_spar_datum_berechnungsbeginn_monat          =>2<
+e_spar_iteratonsziel_mindestsparguthaben      =>0.0<
+e_spar_knz_bonus_moeglich                     =>false<
+e_spar_kto_gebuehr_anteilig_anz_monate        =>11<
+e_spar_kto_gebuehr_anteilig_betrag            =>16.5<
+e_spar_kto_gebuehr_anteilig_bezeichnung       =>Anteilige Kontofuehrungsgebuehr fuer 11 Monate<
+e_spar_kto_gebuehr_anteilig_datum_belastung   =>20200201<
+e_spar_kto_gebuehr_laufend_betrag             =>18.0<
+e_spar_kto_gebuehr_laufend_bezeichnung        =>Kontofuehrungsgebuehr<
+e_spar_kto_gebuehr_laufend_datum_belastung    =>20210101<
+e_spar_laufzeit_gesamt_monate                 =>140<
+e_spar_wop_datum_junge_leute_regelung         =>20270228<
+e_spar_wop_gebuehr_laufend_datum_belastung    =>20210301<
+v_bestehend_ansp_ausstehend                   =>0.0<
+v_bestehend_ansp_festgeschrieben              =>0.0<
+v_bestehend_ansp_uj_vl_as                     =>0.0<
+v_bestehend_ansp_uj_vl_ep                     =>0.0<
+v_bestehend_wop_gebuehr_gesamt                =>0.0<
+v_bestehende_bwz                              =>0.0<
+v_bestehende_saldensumme                      =>0.0<
+v_wop_bestehender_betrag_festgesetzt          =>0.0<
+zaehler_index                                 =>0<
+max_sonder_zahlungen                          =>2<
+
+######################################################################################
+
+START_SUCHSCHLEIFE: c_betrag_bss_berechnet                        =>0.0
+START_SUCHSCHLEIFE: c_spar_datum_mindestsparzeit_long             =>01.02.2022
+START_SUCHSCHLEIFE: e_spar_betrag_tarifliches_mindestsparguthaben =>9.999999999E7
+START_SUCHSCHLEIFE: c_tarif_minbwz_betrag                         =>4.8
+
+ENDE  SUCHSCHLEIFE: c_sparstopp_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_minbwz_datum_long                     =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_migu_datum_long                       =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_tarif_ztv_datum_long                        =>00.00.0000
+ENDE  SUCHSCHLEIFE: c_spar_datum_stichtag_long                    =>30.06.2031
+ENDE  SUCHSCHLEIFE: c_spar_datum_zuteilung_long                   =>31.10.2031
+
+ZEIT Iterationsschleife Sparen Dauer in Millisekunden             =>6<
+
+calcBausparsumme: BERECHNUNGSZIEL BAUSPARSUMME (Iteration 1, Bss 0.0) 
+calcBausparsumme: 
+calcBausparsumme: c_tarif_minbwz_betrag                      4.8
+calcBausparsumme: c_tarif_minbwz_datum_long                  00.00.0000
+calcBausparsumme: c_tarif_minbwz_knz_erreicht                false
+calcBausparsumme: 
+calcBausparsumme: e_spar_betrag_tarif_mindguthaben           9.999999999E7
+calcBausparsumme: c_tarif_migu_datum_long                    00.00.0000
+calcBausparsumme: c_tarif_migu_knz_erreicht                  false
+calcBausparsumme: 
+calcBausparsumme: c_tarif_ztv_datum_long                     00.00.0000
+calcBausparsumme: c_tarif_ztv_knz_erreicht                   false
+calcBausparsumme: 
+calcBausparsumme: c_spar_datum_stichtag_long                 30.06.2031
+calcBausparsumme: c_stichtag_betrag_zinsen                   0.0 / Zinsen ALT 0.0 Differenz 0.0
+calcBausparsumme: c_stichtag_betrag_kontostand               0.0 (=Absolut erreichter Wert)
+calcBausparsumme: c_stichtag_betrag_saldensumme              0.0
+calcBausparsumme: c_stichtag_betrag_bewertungszahl           0.0
+calcBausparsumme: 
+calcBausparsumme: c_betrag_akt_bewertungszahl                0.0
+calcBausparsumme: 
+calcBausparsumme: Zuteilung wurde nicht erreicht. Berechnung einer neuen Bausparsumme
+calcBausparsumme: 
+calcBausparsumme: c_betrag_bss_saldensumme_stichtag        =>0.0<
+calcBausparsumme: c_betrag_bss_kto_stand_stichtag          =>0.0<
+calcBausparsumme: 
+calcBausparsumme: c_betrag_bss_saldensumme_stichtag >= c_betrag_bss_kto_stand_stichtag 
+calcBausparsumme: 
+calcBausparsumme: Neue Bss = c_betrag_bss_kto_stand_stichtag = 0.0
+calcBausparsumme: 
+calcBausparsumme: Korrektur Sparleistung  c_stichtag_betrag_kontostand 0.0 + e_spar_ag_betrag 0.0. 0.0
+calcBausparsumme: 
+calcBausparsumme: Betrag Mindestguthaben von 0.0 wird erreicht. (Stichtagkontostand          0.0 - Minguthaben = 0.0)
+calcBausparsumme: 
+calcBausparsumme: Iteration 1          0.0          0.0          0.0
+calcBausparsumme: 
+
+ZEIT Ergebnisauswertung Dauer in Millisekunden             =>1<
+
+
+'################################################################################################################## 
+'###### ERGEBNISSE ENDE-SPARPHASE                                                                         ######### 
+'################################################################################################################## 
+
+e_sparbeitrag_mgh =>0.0<
+e_sparbeitrag_bwz =>0.0<
+
+ERGEBNISSE_2: c_stichtag_betrag_bewertungszahl        =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_gebeuhren_kfg         =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_kontostand            =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_saldensumme           =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_soll_guthaben         =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_sonderzahlung         =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_sparbeitrag           =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_vl_as                 =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_vl_ep                 =>0.0<
+ERGEBNISSE_2: c_stichtag_betrag_zinsen                =>0.0<
+ERGEBNISSE_2: c_anzahl_bsv_sparraten_bis_spar_stopp   =>15<
+ERGEBNISSE_2: c_anzahl_stichtage_bis_zuteilung        =>11<
+
+ERGEBNISSE_2: c_betrag_akt_bewertungszahl             =>0.0<
+ERGEBNISSE_2: c_betrag_akt_bonus_zinsen               =>0.0<
+ERGEBNISSE_2: c_betrag_akt_grund_zinsen               =>121.38<
+ERGEBNISSE_2: c_betrag_akt_kontostand                 =>18983.28<
+ERGEBNISSE_2: c_betrag_akt_bonus_kto                  =>0.0<
+ERGEBNISSE_2: c_betrag_akt_saldensumme                =>78781.35<
+ERGEBNISSE_2: c_betrag_bss_berechnet                  =>0.0<
+ERGEBNISSE_2: c_betrag_ges_bonus_zinsen               =>0.0<
+ERGEBNISSE_2: c_betrag_ges_bsv_sparbeitrag            =>15000.0<
+ERGEBNISSE_2: c_betrag_ges_guthaben_zinsen            =>0.0<
+ERGEBNISSE_2: c_betrag_ges_kto_gebuehren_spar         =>214.5<
+ERGEBNISSE_2: c_betrag_ges_sonderzahlung              =>550.0<
+ERGEBNISSE_2: c_betrag_ges_vl_antragsteller           =>600.0<
+ERGEBNISSE_2: c_betrag_ges_vl_ehepartner              =>450.0<
+ERGEBNISSE_2: c_betrag_ges_zinsen_spar                =>1929.96<
+
+ERGEBNISSE_2: c_rk_zaehler_iteration                  =>1<
+
+'################################################################################################################## 
+'################################################################################################################## 
+
+Keine Darlehensphase, da die Zuteilung nicht erreicht wurde.
+
+'################################################################################################################## 
+'###### ERGEBNISSE DARLEHEN                                                                                    #### 
+'################################################################################################################## 
+
+bsd_e_anfangsdarlehen                                =>0.0<
+bsd_e_betrag_darlehen_mit_mehrzuteilung              =>0.0<
+bsd_e_betrag_mehr_darlehen                           =>0.0<
+bsd_e_darlehens_gebuehr_betrag                       =>0.0<
+bsd_e_darlehens_gebuehr_bezeichnung                  =>Darlehensgebuehr<
+bsd_e_darlehens_gebuehr_datum_belastung              =>0<
+bsd_e_datum_darlehensbeginn                          =>20311101<
+bsd_e_betrag_disagio                                 =>0.0<
+bsd_e_disagio_bezeichnung                            =>Disagio<
+bsd_e_disagio_datum_belastung                        =>0<
+bsd_e_gesamt_eigene_einzahlung                       =>0.0<
+bsd_e_gesamt_kfg                                     =>0.0<
+bsd_e_gesamt_sondertiglung                           =>0.0<
+bsd_e_gesamt_zinsen                                  =>0.0<
+bsd_e_letzte_rate_betrag                             =>0.0<
+bsd_e_letzte_rate_datum                              =>0<
+bsd_e_letzte_rate_zinsbelastung                      =>0.0<
+bsd_e_tariflicher_darlehensanspruch                  =>0.0<
+c_bsd_betrag_darlehensstand                          =>0.0<
+c_bsd_akt_zins_belastung                             =>0.0<
+c_bsd_aktuelle_darlehenszinsen_bis_belastung         =>0.0<
+c_bsd_anfangsdarlehen                                =>0.0<
+c_bsd_anzahl_monate_gesamt                           =>0<
+c_bsd_berechnungsbeginn_long                         =>0<
+c_bsd_berechnungsende_long                           =>0<
+c_bsd_bsd_knz_darlehen_berechnen                     =>false<
+c_bsd_datum_letztes_kto_element                      =>0<
+c_bsd_start_index                                    =>0<
+c_bsd_zeitraum_darlehensbestand_ab                   =>0<
+c_bsd_zeitraum_darlehensbestand_anzahl_tage          =>0<
+c_bsd_zeitraum_darlehensbestand_betrag               =>0.0<
+c_bsd_zeitraum_darlehensbestand_zinsen               =>0.0<
+c_bsd_zins_und_tilgungsbeitrag                       =>0.0<
+c_bsd_nztb_anfangsdarlehen                           =>0.0<
+c_bsd_nztb_bausparsumme                              =>0.0<
+c_bsd_nztb_guthaben_bei_zuteilung                    =>0.0<
+c_bsd_nztb_tarif_name                                =><
+c_bsd_nztb_tarif_zins_darlehen                       =>0.0<
+c_bsd_nztb_tarif_zins_sparen                         =>0.0<
+c_bsd_nztb_zinsen_bei_zuteilung                      =>0.0<
+tarif_kto_gebuehren_jahr                             =>0.0<
+tarif_mindest_bss                                    =>5000.0<
+tarif_mindest_bwz                                    =>4.8<
+tarif_promille_abschluss_gebuehr                     =>1.8<
+tarif_proz_guthabenzins                              =>1.0<
+tarif_proz_mindest_sparguthaben                      =>40.0<
+tarif_regel_sparbeitrag                              =>4.0<
+tarif_wartezeit_in_monaten                           =>4<
+
+'################################################################################################################## 
+'###### ERGEBNISS RUECKGABE                                                                                    #### 
+'################################################################################################################## 
+
+
+
+Nr.   | Sort Id       | Datum      | Betrag Einzahlung Neu       | Betrag Gebuehr | Betrag Foerderung | Betrag Kontostand | Betrag Bwz | Anzahl Zinstage | Art   | Betrag Auszahlung | Betrag Betrag Salden Summe | Betrag Einzahlung Reset | Betrag Tilg Anteil | Betrag Uj Bonus Zins | Betrag Uj Guthabenzins | Betrag Zins Anteil | Betrag Zinsgutschrift | Bezeichnung        | Bonus Zinsen | Bsd Info Tilg Anteil | Bsd Info Zins Anteil | Knz Aktive Zahlung | Knz Loeschung | Str Art | Element Id | 
+0001  | 20200201_0000 | 01.02.2020 | ID_BERECHNUNGSBEGINN        | 0.0            | 0.0               | 0.0               | 0.0        | 0.0             | 0     | 0                 | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0002  | 20200201_0100 | 01.02.2020 | ID_AG_BELASTUNG             | 0.0            | 0.0               | 0.0               | 0.0        | 0.0             | 334   | 100               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0003  | 20200201_0110 | 01.02.2020 | ID_KFG_ANTEILIG             | 0.0            | 16.5              | 0.0               | -16.5      | 0.0             | 334   | 110               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0004  | 20201231_0420 | 31.12.2020 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | -16.5      | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0005  | 20201400_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | -16.5      | 0.0             | 59    | 498               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0006  | 20210101_0120 | 01.01.2021 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | -34.5      | 0.0             | 59    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0007  | 20210228_0230 | 28.02.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 15.5       | 0.0             | 1     | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0008  | 20210301_0130 | 01.03.2021 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 13.97      | 0.0             | 30    | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.01               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0009  | 20210331_0230 | 31.03.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 63.97      | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.01               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0010  | 20210430_0230 | 30.04.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 113.97     | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.05               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0011  | 20210531_0230 | 31.05.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 163.97     | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.09               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0012  | 20210630_0230 | 30.06.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 213.97     | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.14               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0013  | 20210731_0230 | 31.07.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 263.97     | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.18               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0014  | 20210831_0230 | 31.08.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 313.97     | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.22               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0015  | 20210930_0230 | 30.09.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 363.97     | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.27               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0016  | 20211031_0230 | 31.10.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 413.97     | 0.0             | 30    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.3                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0017  | 20211130_0230 | 30.11.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 463.97     | 0.0             | 31    | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.35               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0018  | 20211231_0230 | 31.12.2021 | Z40                         | 50.0           | 0.0               | 0.0               | 513.97     | 0.0             | 1     | 230               | 0.0                        | 0.0                     | 50.0               | 0.0                  | 0.0                    | 0.01               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0019  | 20211231_0420 | 31.12.2021 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 515.6      | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.01               | 0.0                   | 1.6300000000000001 | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0020  | 20211600_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 515.6      | 0.0             | 60    | 498               | 0.0                        | 515.6                   | 0.0                | 0.0                  | 0.0                    | 0.85               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0021  | 20220101_0120 | 01.01.2022 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 497.6      | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.85               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0022  | 20220301_0130 | 01.03.2022 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 496.07     | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 4.16               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0023  | 20221231_0420 | 31.12.2022 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 502.39     | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 4.16               | 0.0                   | 6.32               | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0024  | 20221800_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 502.39     | 0.0             | 60    | 498               | 0.0                        | 1017.99                 | 0.0                | 0.0                  | 0.0                    | 0.83               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0025  | 20230101_0120 | 01.01.2023 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 484.39     | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.83               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0026  | 20230301_0130 | 01.03.2023 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 482.86     | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 4.05               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0027  | 20231231_0420 | 31.12.2023 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 489.85     | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 4.05               | 0.0                   | 6.99               | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0028  | 20232000_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 489.85     | 0.0             | 61    | 498               | 0.0                        | 1507.8400000000001      | 0.0                | 0.0                  | 0.0                    | 0.82               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0029  | 20240101_0120 | 01.01.2024 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 471.85     | 0.0             | 61    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.82               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0030  | 20240301_0130 | 01.03.2024 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 470.32     | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 3.93               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0031  | 20241231_0420 | 31.12.2024 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 477.94     | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 3.93               | 0.0                   | 7.62               | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0032  | 20242200_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 477.94     | 0.0             | 60    | 498               | 0.0                        | 1985.7800000000002      | 0.0                | 0.0                  | 0.0                    | 0.79               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0033  | 20250101_0120 | 01.01.2025 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 459.94     | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.79               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0034  | 20250301_0130 | 01.03.2025 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 458.41     | 0.0             | 305   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 3.84               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0035  | 20251231_0420 | 31.12.2025 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 466.63     | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 3.84               | 0.0                   | 8.219999999999999  | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0036  | 20252400_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 466.63     | 0.0             | 32    | 498               | 0.0                        | 2452.4100000000003      | 0.0                | 0.0                  | 0.0                    | 0.41               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0037  | 20260101_0120 | 01.01.2026 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 448.63     | 0.0             | 32    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.41               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0038  | 20260201_0200 | 01.02.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 1448.63    | 0.0             | 27    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 0.33               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0039  | 20260228_0210 | 28.02.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 1488.63    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.04               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0040  | 20260228_0220 | 28.02.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 1518.63    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.04               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0041  | 20260301_0130 | 01.03.2026 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 1517.1     | 0.0             | 30    | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 1.25               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0042  | 20260301_0200 | 01.03.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 2517.1     | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 1.25               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0043  | 20260331_0210 | 31.03.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 2557.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.07               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0044  | 20260331_0220 | 31.03.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 2587.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.07               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0045  | 20260401_0200 | 01.04.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 3587.1     | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 2.06               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0046  | 20260430_0210 | 30.04.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 3627.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.1                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0047  | 20260430_0220 | 30.04.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 3657.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.1                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0048  | 20260501_0200 | 01.05.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 4657.1     | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 3.01               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0049  | 20260531_0210 | 31.05.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 4697.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.13               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0050  | 20260531_0220 | 31.05.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 4727.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.13               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0051  | 20260601_0200 | 01.06.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 5727.1     | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 3.76               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0052  | 20260630_0210 | 30.06.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 5767.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.16               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0053  | 20260630_0220 | 30.06.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 5797.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.16               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0054  | 20260701_0200 | 01.07.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 6797.1     | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 4.76               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0055  | 20260731_0210 | 31.07.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 6837.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.19               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0056  | 20260731_0220 | 31.07.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 6867.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.19               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0057  | 20260801_0200 | 01.08.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 7867.1     | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 5.64               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0058  | 20260831_0210 | 31.08.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 7907.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.22               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0059  | 20260831_0220 | 31.08.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 7937.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.22               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0060  | 20260901_0200 | 01.09.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 8937.1     | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 6.31               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0061  | 20260930_0210 | 30.09.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 8977.1     | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.24               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0062  | 20260930_0220 | 30.09.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 9007.1     | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.24               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0063  | 20261001_0200 | 01.10.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 10007.1    | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 7.4                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0064  | 20261031_0210 | 31.10.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 10047.1    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.27               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0065  | 20261031_0220 | 31.10.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 10077.1    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.27               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0066  | 20261101_0200 | 01.11.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 11077.1    | 0.0             | 29    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 8.01               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0067  | 20261130_0210 | 30.11.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 11117.1    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.3                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0068  | 20261130_0220 | 30.11.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 11147.1    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.3                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0069  | 20261201_0200 | 01.12.2026 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 12147.1    | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 9.16               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0070  | 20261231_0210 | 31.12.2026 | Z20                         | 40.0           | 0.0               | 0.0               | 12187.1    | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.33               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0071  | 20261231_0220 | 31.12.2026 | Z30                         | 30.0           | 0.0               | 0.0               | 12217.1    | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.33               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0072  | 20261231_0420 | 31.12.2026 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 12275.53   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.33               | 0.0                   | 58.42999999999999  | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0073  | 20262600_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 12275.53   | 0.0             | 59    | 498               | 0.0                        | 14727.94                | 0.0                | 0.0                  | 0.0                    | 19.84              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0074  | 20270101_0120 | 01.01.2027 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 12257.53   | 0.0             | 59    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 19.84              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0075  | 20270228_0490 | 28.02.2027 | ID_WOP_AUSZAHLUNG_JLR       | 0.0            | 0.0               | 324.21            | 12581.74   | 0.0             | 1     | 490               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.34               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0076  | 20270301_0130 | 01.03.2027 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 12580.21   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 94.79              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0077  | 20271201_0200 | 01.12.2027 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 13580.21   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 10.34              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0078  | 20271231_0210 | 31.12.2027 | Z20                         | 40.0           | 0.0               | 0.0               | 13620.21   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.37               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0079  | 20271231_0220 | 31.12.2027 | Z30                         | 30.0           | 0.0               | 0.0               | 13650.21   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.37               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0080  | 20271231_0420 | 31.12.2027 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 13910.78   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.37               | 0.0                   | 260.57             | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0081  | 20272800_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 13910.78   | 0.0             | 61    | 498               | 0.0                        | 28638.72                | 0.0                | 0.0                  | 0.0                    | 23.18              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0082  | 20280101_0120 | 01.01.2028 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 13892.78   | 0.0             | 61    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 23.18              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0083  | 20280301_0130 | 01.03.2028 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 13891.25   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 104.39             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0084  | 20281201_0200 | 01.12.2028 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 14891.25   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 11.39              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0085  | 20281231_0210 | 31.12.2028 | Z20                         | 40.0           | 0.0               | 0.0               | 14931.25   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.41               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0086  | 20281231_0220 | 31.12.2028 | Z30                         | 30.0           | 0.0               | 0.0               | 14961.25   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.41               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0087  | 20281231_0420 | 31.12.2028 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 15274.52   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.41               | 0.0                   | 313.27000000000004 | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0088  | 20283000_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 15274.52   | 0.0             | 60    | 498               | 0.0                        | 43913.240000000005      | 0.0                | 0.0                  | 0.0                    | 25.11              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0089  | 20290101_0120 | 01.01.2029 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 15256.52   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 25.11              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0090  | 20290301_0130 | 01.03.2029 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 15254.99   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 114.95             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0091  | 20291201_0200 | 01.12.2029 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 16254.99   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 12.54              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0092  | 20291231_0210 | 31.12.2029 | Z20                         | 40.0           | 0.0               | 0.0               | 16294.99   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.45               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0093  | 20291231_0220 | 31.12.2029 | Z30                         | 30.0           | 0.0               | 0.0               | 16324.99   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.45               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0094  | 20291231_0420 | 31.12.2029 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 16693.47   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.45               | 0.0                   | 368.48             | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0095  | 20293200_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 16693.47   | 0.0             | 60    | 498               | 0.0                        | 60606.71000000001       | 0.0                | 0.0                  | 0.0                    | 27.44              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0096  | 20300101_0120 | 01.01.2030 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 16675.47   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 27.44              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0097  | 20300301_0130 | 01.03.2030 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 16673.94   | 0.0             | 275   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 125.64             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0098  | 20301201_0200 | 01.12.2030 | ID_SPAR_BEITRAG             | 1000.0         | 0.0               | 0.0               | 17673.94   | 0.0             | 30    | 200               | 0.0                        | 0.0                     | 1000.0             | 0.0                  | 0.0                    | 13.7               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0099  | 20301231_0210 | 31.12.2030 | Z20                         | 40.0           | 0.0               | 0.0               | 17713.94   | 0.0             | 1     | 210               | 0.0                        | 0.0                     | 40.0               | 0.0                  | 0.0                    | 0.48               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0100  | 20301231_0220 | 31.12.2030 | Z30                         | 30.0           | 0.0               | 0.0               | 17743.94   | 0.0             | 1     | 220               | 0.0                        | 0.0                     | 30.0               | 0.0                  | 0.0                    | 0.48               | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0101  | 20301231_0420 | 31.12.2030 | ID_ZINSGUTSCHRIFT_JAEHRLICH | 0.0            | 0.0               | 0.0               | 18174.64   | 0.0             | 234   | 420               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.48               | 0.0                   | 430.7              | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0102  | 20303400_0498 | 00.00.0000 | ID_STICHTAG                 | 0.0            | 0.0               | 0.0               | 18174.64   | 0.0             | 60    | 498               | 0.0                        | 78781.35                | 0.0                | 0.0                  | 0.0                    | 29.88              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0103  | 20310101_0120 | 01.01.2031 | ID_KFG_LAUFEND              | 0.0            | 18.0              | 0.0               | 18156.64   | 0.0             | 60    | 120               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 29.88              | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0104  | 20310301_0130 | 01.03.2031 | ID_WOP_GEB_LAUFEND          | 0.0            | 1.53              | 0.0               | 18155.11   | 0.0             | 244   | 130               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 121.38             | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0105  | 20311031_0430 | 31.10.2031 | ID_ZINSGUTSCHRIFT_ZUTEILUNG | 0.0            | 0.0               | 0.0               | 18622.84   | 0.0             | 0     | 430               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 467.73             | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0106  | 20311031_0491 | 31.10.2031 | ID_WOP_AUSZAHLUNG           | 0.0            | 0.0               | 360.44            | 18983.28   | 0.0             | 0     | 491               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+0107  | 20311031_0499 | 31.10.2031 | ID_ZUTEILUNG                | 0.0            | 0.0               | 0.0               | 18983.28   | 0.0             | 0     | 499               | 0.0                        | 0.0                     | 0.0                | 0.0                  | 0.0                    | 0.0                | 0.0                   | 0.0                | 0.0          | 0.0                  | 0.0                  | 0.0                | false         | 0       | null       | 
+
+
+
+
+ m_rechenkern_fehler_nummer                       =>0<
+ m_rechenkern_fehler_text                         =>OK<
+ 
+ m_calc_vertragsart                               =>Neuvertrag<
+ m_knz_ist_neuvertrag                             =>true<
+ m_knz_ist_bestandsvertrag                        =>false<
+ 
+ m_datum_berechnung_beginn_long                   =>20200201< 01.02.2020
+ m_datum_berechnung_ende_long                     =>20311031< 31.10.2031
+ m_datum_sparstopp_sparrate_long                  =>0< 00.00.0000
+ m_betrag_bsv_sparbeitrag                         =>1000.00<
+ m_betrag_bsv_bausparsumme                        =>0.00<
+ 
+ m_spar_kto_gebuehr_knz_beruecksichtigt           =>true<
+ m_spar_kto_gebuehr_anteilig_datum_belastung_long =>20200201< 01.02.2020
+ m_spar_kto_gebuehr_anteilig_anz_monate           =>11<
+ m_spar_kto_gebuehr_anteilig_betrag               =>16.50<
+ m_spar_kto_gebuehr_laufend_datum_belastung_long  =>20210101< 01.01.2021
+ m_spar_kto_gebuehr_laufend_betrag                =>18.00<
+ 
+ m_spar_ansp_knz_berechnet                        =>false<
+ m_spar_ansp_betrag_ausstehend                    =>0.00<
+ m_spar_ansp_betrag_gesamt                        =>0.00<
+ m_spar_ansp_betrag_gutgeschrieben                =>0.00<
+ 
+ m_spar_wop_knz_berechnet                         =>true<
+ m_spar_wop_betrag_ausstehend                     =>71.16<
+ m_spar_wop_betrag_gebuehr_gesamt                 =>16.83<
+ m_spar_wop_betrag_gesamt                         =>755.81<
+ m_spar_wop_betrag_gutgeschrieben                 =>684.65<
+ 
+ m_stichtag_datum_long                            =>20310630< 30.06.2031
+ m_stichtag_betrag_bewertungszahl                 =>0.00000<
+ m_stichtag_betrag_sparbeitrag                    =>0.00<
+ m_stichtag_betrag_vl_antragsteller               =>0.00<
+ m_stichtag_betrag_vl_ehepartner                  =>0.00<
+ m_stichtag_betrag_sonderzahlung                  =>0.00<
+ m_stichtag_betrag_zinsen                         =>0.00<
+ m_stichtag_betrag_gebeuhren_kfg                  =>0.00<
+ m_stichtag_betrag_kontostand                     =>0.00<
+ m_stichtag_betrag_saldensumme                    =>0.00<
+ m_stichtag_betrag_soll_guthaben                  =>0.00<
+ 
+ m_zuteilung_datum_long                           =>20311031< 31.10.2031
+ m_zuteilung_betrag_bewertungszahl                =>0.00000<
+ m_zuteilung_betrag_sparbeitrag                   =>15000.00<
+ m_zuteilung_betrag_vl_antragsteller              =>600.00<
+ m_zuteilung_betrag_vl_ehepartner                 =>450.00<
+ m_zuteilung_betrag_sonderzahlung                 =>550.00<
+ m_zuteilung_betrag_zinsen                        =>1929.96<
+ m_zuteilung_betrag_gebeuhren_kfg                 =>214.50<
+ m_zuteilung_betrag_bonus_zinsen                  =>0.00<
+ m_zuteilung_betrag_bonus_gutgeschrieben          =>0.00<
+ m_zuteilung_betrag_guthaben_zinsen               =>0.00<
+ 
+ m_tarif_mindestsparzeit_datum                    =>20220201< 01.02.2022
+ m_tarif_mindestsparzeit_anzahl_monate            =>24<
+ 
+ m_tarif_mindestguthaben_datum                    =>0< 00.00.0000
+ m_tarif_mindestguthaben_betrag                   =>0.00<
+ m_tarif_mindestguthaben_knz_erreicht             =>false<
+ 
+ m_tarif_bewertungszahl_datum                     =>0< 00.00.0000
+ m_tarif_bewertungszahl_betrag                    =>4.80<
+ m_tarif_bewertungszahl_knz_erreicht              =>false<
+ 
+ m_tarif_zuteilungsvoraussetzungen_datum          =>0< 00.00.0000
+ m_tarif_zuteilungsvoraussetzungen_knz_erreicht   =>false<
+ 
+ m_tarif_regelsparbeitrag_betrag                  =>0.00<
+ m_tarif_regelsparbeitrag_promille_bss            =>4.00<
+ 
+ m_tarif_mindest_bss                              =>5000.00<
+ m_tarif_mindest_bwz                              =>4.80000<
+ m_tarif_promille_abschluss_gebuehr               =>1.80<
+ m_tarif_proz_guthabenzins                        =>1.00<
+ m_tarif_proz_mindest_sparguthaben                =>40.00<
+ m_tarif_wartezeit_in_monaten                     =>4.00<
+ 
+ m_bsd_datum_darlehen_beginn                      =>20311101< 01.11.2031
+ m_bsd_datum_darlehen_ende                        =>0< 00.00.0000
+ m_bsd_tariflicher_darlehensanspruch              =>0.00<
+ m_bsd_tariflicher_ztb                            =>0.00<
+ m_bsd_ztb_betrag                                 =>0.00<
+ m_bsd_ztb_promill_bss                            =>0.00000<
+ m_bsd_betrag_anfangsdarlehen                     =>0.00<
+ m_bsd_betrag_darlehen_mit_mehrzuteilung          =>0.00<
+ m_bsd_betrag_mehr_darlehen                       =>0.00<
+ m_bsd_darlehens_gebuehr_betrag                   =>0.00<
+ m_bsd_darlehens_gebuehr_datum_belastung          =>0<
+ m_bsd_gesamt_eigene_einzahlung                   =>0.00<
+ m_bsd_gesamt_sondertiglung                       =>0.00<
+ m_bsd_gesamt_zinsen                              =>0.00<
+ 
+ m_bsd_disagio_datum_belastung                    =>0< 00.00.0000
+ m_bsd_disagio_betrag                             =>0.00<
+ 
+ m_bsd_kto_gebuehr_knz_beruecksichtigt            =>true<
+ m_bsd_kto_gebuehr_anteilig_anz_monate            =>0<
+ m_bsd_kto_gebuehr_anteilig_betrag                =>0.00000<
+ m_bsd_kto_gebuehr_laufend_betrag                 =>0.00000<
+ m_bsd_gesamt_kfg                                 =>0.00<
+ 
+ m_bsd_letzte_rate_datum                          =>0< 00.00.0000
+ m_bsd_letzte_rate_betrag                         =>0.00<
+ m_bsd_letzte_rate_zinsbelastung                  =>0.00<
+ 
+ m_laufzeit_sparphase_gesamt_monate               =>140<
+ m_laufzeit_sparphase_jahre                       =>11<
+ m_laufzeit_sparphase_monate                      =>8<
+ 
+ m_laufzeit_bsd_gesamt_monate                     =>0<
+ m_laufzeit_bsd_jahre                             =>0<
+ m_laufzeit_bsd_monate                            =>0<
+ 
+ m_laufzeit_vertrag_gesamt_monate                 =>140<
+ m_laufzeit_vertrag_jahre                         =>11<
+ m_laufzeit_vertrag_monate                        =>8<
+ 
+ m_millisekunden_gesamt                           =>24<
+ m_millisekunden_vorabberechnungen                =>6<
+ m_millisekunden_sparphase_kto_verlauf            =>5<
+ m_millisekunden_sparphase_berechnung             =>8<
+ m_millisekunden_darlehensphase                   =>2<
